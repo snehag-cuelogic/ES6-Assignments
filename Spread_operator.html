@@ -1,0 +1,33 @@
+<html>
+<body>
+<h1>Usage of spread operators</h1>
+
+sum of  array[1,2,3] using spread operator<br>
+<p id="sum"></p>
+
+<h3>
+    Add string values in array using spread
+</h3>
+var parts = ['shoulders', 'knees']; <br>
+var moreParts = ['head', ...parts, 'and', 'toes']; <br>
+
+<p id="concateStrng"></p>
+<script>
+function sum(x, y, z) {
+  return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+
+console.log(sum(...numbers));
+let sumNum = sum(...numbers);
+document.getElementById("sum").innerHTML = sumNum;
+
+//concate
+var parts = ['shoulders', 'knees']; 
+var moreParts = ['head', ...parts, 'and', 'toes']; 
+document.getElementById("concateStrng").innerHTML = moreParts;
+console.log(moreParts); 
+</script>
+</body>
+</html>
