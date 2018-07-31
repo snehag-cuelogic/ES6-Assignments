@@ -1,21 +1,23 @@
 <html>
-<body>
-<h1>
-Making objects and assigning properties
-</h1>
 
-<script>
-let name='Sneha';
-let age=25;
-let ageField = 'age'; 
-let obj={
-    'name':'Gosewade',
-    [ageField]:26,
-    'full_name'(){
-        console.log(this.name+', '+this.age)
-    }
-}
-console.log(obj);
-</script>
+<body>
+    <h1>
+        Making objects and assigning properties
+    </h1>
+
+    <script>
+        let name = 'Sneha';
+        let age = 25;
+        let ageField = 'age';
+        let obj = {
+            'name': 'Gosewade',
+            [ageField]: 26,
+            'full_name'() {
+                console.log(this.name + ', ' + this.age)
+            }
+        }
+        console.log(obj);
+    </script>
 </body>
+
 </html>
