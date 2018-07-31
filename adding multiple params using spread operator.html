@@ -1,0 +1,34 @@
+<html>
+<body>
+<h1>
+Passing n number of arguments using spread operator</h1>
+function sumUp(...toAdd) { <br>
+    console.log(toAdd);<br>
+    let result= 0;<br>
+    for(let i=0;i < toAdd.length;i++){<br>
+    result +=toAdd[i];<br>
+    
+    }
+    <br>
+    return result;<br>
+    }<br>
+    console.log(sumUp(100,200,35));
+    <br>
+    console.log(sumUp(100,150,"200",60));
+
+<script>
+function sumUp(...toAdd) {
+console.log(toAdd);
+let result= 0;
+for(let i=0;i < toAdd.length;i++){
+result +=toAdd[i];
+
+}
+
+return result;
+}
+console.log(sumUp(100,200,35));
+console.log(sumUp(100,150,"200",60));
+</script>
+</body>
+</html>
