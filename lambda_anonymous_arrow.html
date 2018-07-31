@@ -1,0 +1,36 @@
+<html>
+
+<body>
+    <h1>Lambda / Anonymous / Arrow Functions</h1>
+    var msg = (x,y,z)=> {
+    <br> console.log(x+y*z)
+    <br> }
+    <br> msg(10,2,4);
+
+
+    <h3>Arrow function</h3>
+
+    let materials = [ 'Hydrogen', 'Helium', 'Lithium', 'Beryllium' ];
+    <br> console.log(materials.map(material => material.length));
+
+    <script>
+        //anonymous / lambda function
+        var msg = (x, y, z) => {
+            console.log(x + y * z)
+        }
+
+        msg(10, 2, 4);
+
+        //arrow function
+        let materials = [
+            'Hydrogen',
+            'Helium',
+            'Lithium',
+            'Beryllium'
+        ];
+
+        console.log(materials.map(material => material.length));
+    </script>
+</body>
+
+</html>
